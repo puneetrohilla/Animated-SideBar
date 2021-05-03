@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Animated sidebar</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">Puneet</div>
+      <div class="burger" onclick="openNav()"><a href="#">&#9776;</a></div>
+    </nav>
+
+    <div class="sidebar">
+      <a class="closebtn" href="#" onclick="closeNav()">&timesbar;</a>
+      <a href="#"><i class="fas fa-home"></i>Home</a>
+      <a href="#"><i class="fas fa-home"></i>About</a>
+      <a href="#"><i class="fas fa-home"></i>Contact</a>
+      <a href="#"><i class="fas fa-home"></i>Login</a>
+      <a href="#"><i class="fas fa-home"></i>Services</a>
+    </div>
+    <section>
+      <h4>Animated Sidebar</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+        optio fugit, eveniet nobis rerum quae! Minus temporibus magni ea,
+        blanditiis explicabo dolore delectus, ipsa vitae possimus cupiditate ex
+        iure doloribus!
+      </p>
+    </section>
+
+    <script>
+      const openNav = () => {
+        document.querySelector(".sidebar").style.width = "250" + "px";
+      };
+      const closeNav = () => {
+        document.querySelector(".sidebar").style.width = "0" + "px";
+      };
+    </script>
+  </body>
+</html>
+
+<!-- ........................Another Way without transition
+     const openNav=()=> // { //
+document.querySelector(".sidebar").style.display="block"; // } // const
+closeNav=()=>  {  document.querySelector(".sidebar").style.display="none";
+} -->
